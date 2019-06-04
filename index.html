@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+ <link rel="stylesheet" href="ATG_t1.css">
+</head>
+<body>
+
+<button id="myBtn">Click here</button> <!--for opening dialog box-->
+
+<div id="myDialog" class="dialog">
+ 
+  <div class="content">
+     <div class="header">
+         <i class="fas fa-arrow-left"></i>
+         <span id=h>Multiple Ticket</span>
+        
+     </div>
+
+     <div class="body">
+         <span id="number">1.</span>
+        <form method="post">
+           <p>Category?</p>
+           <input type="text" placeholder="Example: Entry, food or parking etc." id="t1">
+           <p>Description</p>
+           <input type="text" placeholder="Description" id="t2">
+           <p>Ticket price for this category?</p>
+           <button class="dropbtn"><i class="fas fa-rupee-sign fa-sm"></i>
+            <i class="fa fa-caret-down"></i></button><input type="text" placeholder="Price per ticket" id="t3">
+        </form>
+     </div>
+
+     <div class="footer">
+       Total Cost: <i class="fas fa-rupee-sign fa-sm"></i>0
+       <button id="close">Done<img src="2.jpg"></button>
+     </div>
+    
+  </div>
+
+</div>
+
+    <script>
+    var dialog = document.getElementById("myDialog");
+    var btn = document.getElementById("myBtn");
+    var close = document.getElementById("close");
+    btn.onclick = function() {
+      dialog.style.display = "block";  //for opening box
+    }
+    close.onclick = function() {
+      dialog.style.display = "none";  //for closing the box
+    }
+    </script>
+
+  </body>
+</html>
